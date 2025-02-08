@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} ${jetbrainsMono.variable} ${inter.variable} ${roboto_mono.variable} bg-gradient-to-br from-background via-background/80 to-primary/5 transition-colors duration-300 ease-linear`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.variable} ${jetbrainsMono.variable} ${inter.variable} ${roboto_mono.variable} transition-colors duration-100 ease-linear`}>
         <Providers>
           {children}
         </Providers>
@@ -23,3 +23,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+// bg-gradient-to-br from-background via-background/80 to-primary/5
