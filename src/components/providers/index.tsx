@@ -7,12 +7,7 @@ import { MountedProvider } from "./mounted-provider";
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="dark"
-      enableSystem
-      disableTransitionOnChange
-    >
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <FontProvider>
         <MountedProvider>
           {children}
