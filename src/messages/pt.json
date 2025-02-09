@@ -1,0 +1,32 @@
+{
+  "HomePage": {
+    "description": "Faça login para gerenciar seus bancos de dados PostgreSQL de forma simples e eficiente",
+    "username": {
+      "label": "Nome de usuário",
+      "placeholder": "usuário"
+    },
+    "password": "Senha",
+    "forgot": "Esqueceu?",
+    "submit": "Entrar",
+    "account": "Não tem uma conta?",
+    "link": "Criar conta"
+  },
+  "AccountPage": {
+    "description": "Crie uma conta para começar a gerenciar seus bancos de dados PostgreSQL com facilidade e eficiência",
+    "email": {
+      "label" : "Email",
+      "placeholder": "exemple@gmail.com"
+    },
+    "username": {
+      "label": "Nome de usuário",
+      "placeholder": "usuário"
+    },
+    "password": {
+      "label": "Senha",
+      "label2": "Confirmar senha"
+    },
+    "submit": "Criar Conta",
+    "haveAccount": "Já tem uma conta?",
+    "link": "Login"    
+  }
+}

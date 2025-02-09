@@ -8,6 +8,7 @@ type ServerConfig = {
 };
 
 class ConnectionManager {
+  
   private servers: Map<string, Database> = new Map();
 
   addServer(name: string, config: ServerConfig) {

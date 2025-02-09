@@ -1,0 +1,32 @@
+{
+  "HomePage": {
+    "description": "Log in to manage your PostgreSQL databases simply and efficiently",
+    "username": {
+      "label": "Username",
+      "placeholder": "user"
+    },
+    "password": "Password",
+    "forgot": "Forgot?",
+    "submit": "Login",
+    "account": "Don't have an account?",
+    "link": "Sign up"
+  },
+  "AccountPage": {
+    "description": "Create an account to start managing your PostgreSQL databases easily and efficiently",
+    "email": {
+      "label": "Email",
+      "placeholder": "example@gmail.com"
+    },
+    "username": {
+      "label": "Username",
+      "placeholder": "user"
+    },
+    "password": {
+      "label": "Password",
+      "label2": "Confirm password"
+    },
+    "submit": "Sign Up",
+    "haveAccount": "Already have an account?",
+    "link": "Login"
+  }
+}
