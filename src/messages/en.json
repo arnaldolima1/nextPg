@@ -19,7 +19,7 @@
     },
     "username": {
       "label": "Username",
-      "placeholder": "user"
+      "placeholder": "username"
     },
     "password": {
       "label": "Password",
@@ -27,6 +27,11 @@
     },
     "submit": "Sign Up",
     "haveAccount": "Already have an account?",
-    "link": "Login"
+    "link": "Login",
+    "toast": {
+      "loading": "Connecting...",
+      "success": "User registered successfully!",
+      "error": "Unable to register user."
+    }  
   }
 }

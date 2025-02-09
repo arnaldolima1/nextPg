@@ -1,17 +1,25 @@
 import db from "../services/sqlite";
 import { hash, compare } from "bcrypt-ts";
+import { SqliteError } from "better-sqlite3";
 import type { createUser } from "../types/user";
 
 class User {
-  createUser({ username, password }: createUser) {
+ 
+  async createUser({ email, username, password }: createUser) {
     try {
-      const hsh = hash(password, 15);
+      const hsh = await hash(password, 15);
       const stmt = db
-        .prepare("INSERT INTO users (username, password) VALUES (?, ?)")
-        .run(username, hsh);
-      return stmt.changes > 0 ? true : false;
+        .prepare(
+          "INSERT INTO users (email, username, password) VALUES (?, ?, ?)"
+        )
+        .run(email, username, hsh);
+
+      return { success: true, message: "" };
     } catch (error: any) {
-      return false;
+      if (error instanceof SqliteError) {
+        return { success: false, message: error.code };
+      }
+      return { success: false, message: "" };
     }
   }
 

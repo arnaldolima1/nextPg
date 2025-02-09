@@ -15,7 +15,7 @@
     "description": "Crie uma conta para começar a gerenciar seus bancos de dados PostgreSQL com facilidade e eficiência",
     "email": {
       "label" : "Email",
-      "placeholder": "exemple@gmail.com"
+      "placeholder": "exemplo@gmail.com"
     },
     "username": {
       "label": "Nome de usuário",
@@ -27,6 +27,11 @@
     },
     "submit": "Criar Conta",
     "haveAccount": "Já tem uma conta?",
-    "link": "Login"    
+    "link": "Login",
+    "toast": {
+      "loading": "Conectando...",
+      "success": "Usuário cadastrado com sucesso!",
+      "error": "Não foi possivel cadastrar o usuário."
+    }    
   }
 }

@@ -5,7 +5,7 @@ export const createUserSchema = z.object({
     .string()
     .min(5, { message: "Minimum 5 characters" })
     .max(15, { message: "Maximum 15 characters" }),
-  email: z.string().email("Invalid email"),
+  email: z.string().email(),
   password: z
     .string()
     .min(8, { message: "Minimum 8 characters" })
